@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PenTester - Automated Penetration Testing Framework
 
 PenTester is a console-based automated penetration testing framework written in Python. It automates common penetration testing tasks like port scanning, directory brute-forcing, service banner grabbing, and integrates with Metasploit where possible.
@@ -135,3 +136,6 @@ This tool is intended for educational purposes and authorized penetration testin
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+=======
+# pendone-cs-
+>>>>>>> 608aa7732093a1ba76ab4ab7537854ca60f0c205
