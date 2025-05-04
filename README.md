@@ -23,7 +23,7 @@ PenTester is a console-based automated penetration testing framework written in 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/pentester.git
+   git clone https://github.com/venky7235/pentester.git
    cd pentester
    ```
 
