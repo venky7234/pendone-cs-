@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PenTester Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px 5px 0 0;
+            margin-bottom: 20px;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            text-align: left;
+            padding: 10px;
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .port-open {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .vulnerability {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .banner {
+            font-family: monospace;
+            white-space: pre-wrap;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>PenTester - Automated Penetration Testing Report</h1>
+    </div>
+
+    <div class="container">
+        <h2>Target Information</h2>
+        <table>
+            <tr>
+                <th>Target</th>
+                <td>www.zomato.com</td>
+            </tr>
+            <tr>
+                <th>Scan Date</th>
+                <td>2025-05-19 11:45:18</td>
+            </tr>
+            <tr>
+                <th>Report Generated</th>
+                <td>2025-05-19 11:46:06</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Port Scan Results</h2>
+
+        <table>
+            <tr>
+                <th>Port</th>
+                <th>Protocol</th>
+                <th>Service</th>
+                <th>Product</th>
+                <th>Version</th>
+            </tr>
+
+            <tr>
+                <td class="port-open">80</td>
+                <td>tcp</td>
+                <td>http</td>
+                <td>AkamaiGHost</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="port-open">443</td>
+                <td>tcp</td>
+                <td>https</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+</div>
+    <div class="container">
+        <h2>Banner Grabbing Results</h2>
+<p>No banner information available.</p></div>
+    <div class="container">
+        <h2>Directory Brute-Forcing Results</h2>
+<h3>https://www.zomato.com:443</h3>
+        <table>
+            <tr>
+                <th>Path</th>
+                <th>Status Code</th>
+                <th>Size</th>
+                <th>Content Type</th>
+                <th>Redirect</th>
+            </tr>
+
+            <tr>
+                <td>/index</td>
+                <td>301</td>
+                <td>0</td>
+                <td>text/html</td>
+                <td>/hyderabad/restaurants</td>
+            </tr>
+
+            <tr>
+                <td>/home</td>
+                <td>301</td>
+                <td>0</td>
+                <td>text/html</td>
+                <td>https://www.zomato.com/home-ks</td>
+            </tr>
+
+            <tr>
+                <td>/index.php</td>
+                <td>301</td>
+                <td>0</td>
+                <td>text/html</td>
+                <td>/hyderabad/restaurants</td>
+            </tr>
+
+            <tr>
+                <td>/admin</td>
+                <td>301</td>
+                <td>248</td>
+                <td>text/html</td>
+                <td>http://www.zomato.com/application/admin/</td>
+            </tr>
+
+            <tr>
+                <td>/assets</td>
+                <td>301</td>
+                <td>249</td>
+                <td>text/html</td>
+                <td>http://www.zomato.com/application/assets/</td>
+            </tr>
+
+            <tr>
+                <td>/docs</td>
+                <td>200</td>
+                <td>123970</td>
+                <td>text/html</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>/blog</td>
+                <td>301</td>
+                <td>0</td>
+                <td></td>
+                <td>https://blog.zomato.com</td>
+            </tr>
+
+            <tr>
+                <td>/includes</td>
+                <td>200</td>
+                <td>112922</td>
+                <td>text/html</td>
+                <td></td>
+            </tr>
+</table></div>
+    <div class="footer">
+        <p>Generated by PenTester - Automated Penetration Testing Framework</p>
+    </div>
+</body>
+</html>
